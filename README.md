@@ -23,20 +23,29 @@ Text-based interaction over a terminal or console.
 How It Works
 
 Server
+
 The Server program listens on port 2024 using a ServerSocket.
+
 When a client connects, the server accepts the connection (Socket).
+
 Messages sent by the client are received via a BufferedReader and displayed in the console.
+
 The server runs until the client disconnects or sends an empty message.
 
 Client
+
 The Client prompts the user to enter the server's IP address.
+
 It establishes a connection to the server on port 2024 using a Socket.
+
 The client reads user input via a BufferedReader and sends it to the server using a PrintStream.
+
 The communication ends when the user sends null (indicating no input).
 
 Prerequisites
 
 Java Development Kit (JDK) installed.
+
 Knowledge of the server's IP address (can be localhost for testing on the same machine).
 
 Steps to Run
