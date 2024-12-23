@@ -10,7 +10,7 @@ import static java.lang.System.out;
 
 import javax.swing.JOptionPane;
 
-public class Client{//Use MultiThreading
+public class Client{
 	static public void main(String...ar)throws Exception{
 		out.println("Enter IP Address to Chat : ");
 		
