@@ -5,14 +5,19 @@ Overview
 This program implements a simple chat application using Java. It allows communication between a client and a server over a network using sockets. The application is divided into two main components:
 
 Server.java: Sets up a server to listen for incoming messages from a client.
+
 Client.java: Connects to the server and sends messages.
+
 The communication uses multi-threading for simultaneous reading and writing, though additional threading would need to be explicitly added for more advanced functionality.
 
 Features
 
 Server: Waits for connections and displays received messages.
+
 Client: Connects to the server and sends user-inputted messages.
+
 Uses port 2024 for communication.
+
 Text-based interaction over a terminal or console.
 
 How It Works
@@ -28,23 +33,30 @@ The Client prompts the user to enter the server's IP address.
 It establishes a connection to the server on port 2024 using a Socket.
 The client reads user input via a BufferedReader and sends it to the server using a PrintStream.
 The communication ends when the user sends null (indicating no input).
-Usage Instructions
 
 Prerequisites
 
 Java Development Kit (JDK) installed.
 Knowledge of the server's IP address (can be localhost for testing on the same machine).
+
 Steps to Run
+
 Start the Server:
 
 Compile the Server.java file using javac Server.java.
+
 Run the server using java Server.
+
 The server will display "Server is Ready" and wait for a connection.
+
 Start the Client:
 
 Compile the Client.java file using javac Client.java.
+
 Run the client using java Client.
+
 Enter the server's IP address when prompted.
+
 Send Messages:
 
 Type a message in the client terminal and press Enter to send it.
