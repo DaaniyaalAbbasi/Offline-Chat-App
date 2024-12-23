@@ -54,6 +54,9 @@ To end the communication, send an empty message.
 Notes
 
 Multi-threading: While the program hints at multi-threading, only the client or server can operate at a time. For simultaneous send/receive functionality, implement threading explicitly.
+
 Port Configuration: The program uses port 2024. Ensure this port is open and not blocked by firewalls.
+
 Error Handling: Add error handling for better user experience (e.g., invalid IPs, connection issues).
+
 Security: This program is for learning purposes and does not include security features like encryption.
