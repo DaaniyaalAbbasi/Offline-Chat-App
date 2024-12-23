@@ -1,6 +1,7 @@
 # Offline-Chat-App
 
 Overview
+
 This program implements a simple chat application using Java. It allows communication between a client and a server over a network using sockets. The application is divided into two main components:
 
 Server.java: Sets up a server to listen for incoming messages from a client.
@@ -8,6 +9,7 @@ Client.java: Connects to the server and sends messages.
 The communication uses multi-threading for simultaneous reading and writing, though additional threading would need to be explicitly added for more advanced functionality.
 
 Features
+
 Server: Waits for connections and displays received messages.
 Client: Connects to the server and sends user-inputted messages.
 Uses port 2024 for communication.
@@ -29,6 +31,7 @@ The communication ends when the user sends null (indicating no input).
 Usage Instructions
 
 Prerequisites
+
 Java Development Kit (JDK) installed.
 Knowledge of the server's IP address (can be localhost for testing on the same machine).
 Steps to Run
@@ -49,6 +52,7 @@ The message will appear in the server terminal.
 To end the communication, send an empty message.
 
 Notes
+
 Multi-threading: While the program hints at multi-threading, only the client or server can operate at a time. For simultaneous send/receive functionality, implement threading explicitly.
 Port Configuration: The program uses port 2024. Ensure this port is open and not blocked by firewalls.
 Error Handling: Add error handling for better user experience (e.g., invalid IPs, connection issues).
